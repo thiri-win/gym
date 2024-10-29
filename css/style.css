@@ -9,6 +9,7 @@
     --black: #000;
     --white: #fff;
     --bg-black: #181A23;
+    --bg-gray: #F0F2F4;
 }
 
 * {
@@ -436,6 +437,101 @@ nav .dropdown .dropdown-menu.active {
 
 }
 
+/* course */
+.course {
+    text-align: center;
+    padding: 5rem 0;
+    background-color: var(--bg-gray);
+}
+.course .course-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.course .course-content .box {
+    flex-basis: 18rem;
+    flex-grow: 0;
+    background-color: var(--white);
+    box-shadow: 5px 5px rbga(0,0,0,0.2);
+    text-align: left;
+}
+.course .course-content .box img {
+    width: 100%;
+}
+.course .course-content .box h2,
+.course .course-content .box .para {
+    padding: 0 1rem;
+    text-transform: capitalize;
+}
+
+/* footer */
+footer {
+    background-color: var(--bg-black);
+    padding: 5rem 0;
+    color: var(--white);
+}
+footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .footer-info,
+footer .footer-posts,
+footer .footer-links,
+footer .footer-location {
+    flex-basis: 16rem;
+    padding: 1rem;
+}
+footer h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+footer .footer-info {
+    flex-grow: 1;
+}
+footer .footer-info h1 {
+    text-transform: uppercase;
+}
+footer .footer-posts span {
+    color: var(--gray);
+    opacity: 0.6;
+}
+footer .footer-links ul li {
+    list-style: none;
+}
+footer .footer-links ul li::before {
+    content: '\f054';
+    padding-right: 0.7rem;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+footer .footer-links ul li:hover {
+    color: var(--primary);
+}
+footer .footer-links ul li a {
+    text-decoration: none;
+    color: var(--gray);
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-transform: capitalize;
+}
+footer .footer-location .email,
+footer .footer-location .phone {
+    margin-bottom: 0.5rem;
+}
+footer .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 2rem 1rem;
+}
+footer .copyright i {
+    padding-right: 1rem;
+    cursor: pointer;
+}
 
 /* media query */
 @media (max-width: 1200px) {
